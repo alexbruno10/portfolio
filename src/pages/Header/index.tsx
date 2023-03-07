@@ -1,3 +1,5 @@
+import { GithubLogo, LinkedinLogo, Envelope  } from '@phosphor-icons/react'
+
 export default function Header() {
     return(
         <>
@@ -8,8 +10,10 @@ export default function Header() {
                         <span>Experience</span>
                         <span>Projects</span>
                     </div>
-                    <div>
-                        icons
+                    <div className='flex gap-4'>
+                        <GithubLogo size={22} weight="fill"/>
+                        <LinkedinLogo size={22} weight="fill"/>
+                        <Envelope size={22} weight="fill"/>
                     </div>
                 </div>
             </header>
