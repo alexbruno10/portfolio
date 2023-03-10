@@ -3,10 +3,10 @@ import { GithubLogo, LinkedinLogo, Envelope  } from '@phosphor-icons/react'
 export default function Header() {
     return(
         <>
-            <header className="w-auto ml-12 mr-12 mt-6">
+            <header>
                 <div className="flex justify-between">
                     <div className="flex gap-8">
-                        <span>Skills</span>
+                        <a href="#skills">Skill</a>
                         <span>Experience</span>
                         <span>Projects</span>
                     </div>
