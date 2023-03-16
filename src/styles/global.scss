@@ -1,0 +1,75 @@
+:root {
+    --background: #08070b;
+    
+    --white: #fff;
+    --gray-100: #e1e1e6;
+    --gray-300: #808080;
+    --gray-400: #333333;
+    --gray-600: #1A1A1A;
+    --gray-700: #262626;
+    --gray-800: #0D0D0D;
+    --gray-900: #121214;
+    --gray-input: #898de7;
+  
+    --green-500: #00875f;
+    --gray-input: #6fcf97;
+  
+    --purple: #8284FA;
+    --purple-dark: #5E60CE;
+  
+    --blue: #4EA8DE;
+    --blue-dark: #1E6F9F;
+    --blue-primary: #aad7ff;
+    --blue-input: #353662;
+  
+    --pink: #fd689f;
+    --danger: #E25858;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  @media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--gray-300);
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--danger);
+  }
+
+  
+  body {
+      background: var(--background);
+      color: var(--gray-300);
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  body, input, textarea, button {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+  }
