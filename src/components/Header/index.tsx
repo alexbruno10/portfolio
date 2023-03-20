@@ -5,8 +5,9 @@ export default function Header() {
     return(
         <>
             <header className={style.header}>
-                <h1>Alex Bruno</h1>
+                <h1>AB</h1>
                 <div className={style.sections}>
+                    <a href="">Home</a>
                     <a href="">Sobre</a>
                     <a href="">Skills</a>
                     <a href="">Projetos</a>
