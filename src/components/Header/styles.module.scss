@@ -10,9 +10,55 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .sections {
+        display: flex;
+        gap: 10px;
+        
+        a {
+            transition: color 0.5s;
+            
+            &:hover {
+                color: var(--white);
+            } 
+
+                &.active::after {
+                    content: '';
+                    border-bottom: 1px solid var(--white);
+                }
+
+        }
+
+
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+
+        a {
+
+            transition: color 0.5s;
+
+            &:hover {
+
+                .github:hover {
+                    color: var(--github);
+                }
+                .linkedin:hover {
+                    color: var(--linkedin);
+                }
+                .mail:hover {
+                    color: var(--mail);
+                }
+            }
+
+
+        }
+
+
+    }
+
 }
 
-.sections {
-    display: flex;
-    gap: 10px;
-}
+
