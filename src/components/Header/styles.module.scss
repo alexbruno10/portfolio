@@ -22,11 +22,19 @@
                 color: var(--white);
             } 
 
-                &.active::after {
-                    content: '';
-                    border-bottom: 1px solid var(--white);
-                }
+        }
 
+        .home {
+            border-bottom: 1px solid var(--red-100);
+            color: var(--white);
+        }
+        .about {
+            border-bottom: 1px solid var(--red-100);
+            color: var(--white);
+        }
+        .projects {
+            border-bottom: 1px solid var(--red-100);
+            color: var(--white);
         }
 
 

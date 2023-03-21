@@ -3,19 +3,13 @@ import style from './styles.module.scss'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-interface ActiveLink {
-    class: string,
-}
-
-
 export default function Header() {
 
-    const [activeLink, setActiveLink] = useState<ActiveLink>({class: 'home'});
+    const [activeLink, setActiveLink] = useState('home');
 
     function handleActiveLink (name: string) {
         console.log(name)
         setActiveLink(name);
-        console.log(activeLink)
     }
 
     return(
@@ -25,14 +19,14 @@ export default function Header() {
                     <h1>AB</h1>
                 </Link>
                 <div className={style.sections}>
-                    <Link to={`/`}>
-                    Home
+                    <Link to={`/`} onClick={() => {handleActiveLink('home')}}>
+                    <span className={activeLink == 'home' ? style.home : ''}>Home</span>
                     </Link>
-                    <Link className={style.active} to={`/sobre`} onClick={() => handleActiveLink('sobre')}>
-                    Sobre
+                    <Link className={style.active} to={`/sobre`} onClick={() => {handleActiveLink('about')}}>
+                    <span className={activeLink == 'about' ? style.home : ''}>Sobre</span>
                     </Link>
-                    <Link to={`/`}>
-                    Projetos
+                    <Link to={`/`} onClick={() => {handleActiveLink('projects')}}>
+                    <span className={activeLink == 'projects' ? style.home : ''}>Projetos</span>
                     </Link>
                 </div>
                 <div className={style.icons}>
