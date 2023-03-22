@@ -22,7 +22,7 @@ export default function Header() {
                     <Link to={`/`} onClick={() => {handleActiveLink('home')}}>
                     <span className={activeLink == 'home' ? style.home : ''}>Home</span>
                     </Link>
-                    <Link className={style.active} to={`/sobre`} onClick={() => {handleActiveLink('about')}}>
+                    <Link to={`/about`} onClick={() => {handleActiveLink('about')}}>
                     <span className={activeLink == 'about' ? style.home : ''}>About</span>
                     </Link>
                     <Link to={`/`} onClick={() => {handleActiveLink('projects')}}>

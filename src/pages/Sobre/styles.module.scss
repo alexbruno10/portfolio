@@ -1,0 +1,39 @@
+.content {
+  
+    max-width: 1120px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5rem;
+    height: 80vh;
+    color: var(--gray-200);
+
+    
+    img {
+        width: 50%;
+        height: 50%;
+        border-radius: 12px;
+    };
+    
+    .contentTitle {
+    
+        max-width: 1120px;
+        color: var(--white);
+        border-bottom: 2px solid var(--red-100);
+        
+    }
+
+    .contentAbout {
+
+        padding-top: 3rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .contentParagraph {
+        p {
+            padding-bottom: 1rem;
+        }
+    }
+
+}
