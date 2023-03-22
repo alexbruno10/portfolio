@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding: 0 2rem;
     height: 80vh;
+    color: var(--gray-200);
 
     div {
         margin: 0 auto;
@@ -13,4 +14,35 @@
         align-items: center;
     };
 
+    .name {
+    background: linear-gradient(90deg, rgba(255,22,100,1) 7%, rgba(226,50,107,1) 50%, rgba(201,80,116,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }    
+
+    .aboutMe {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: var(--gray-300);
+        font-size: 0.9rem;
+
+        
+        
+        svg {
+            -webkit-animation: slide 2s linear infinite; 
+            animation: slide 2s linear infinite;
+            color: var(--red-100);
+            
+            @-webkit-keyframes slide {
+                0% { opacity:1; transform: translateX(0vw); }  
+               20% { opacity:1; transform: translateX(1vw); }
+            }
+            @keyframes slide {
+                0% { opacity:1; transform: translateX(0vw); }  
+               20% { opacity:1; transform: translateX(1vw); }
+            }
+            
+        }
+    }
 }
