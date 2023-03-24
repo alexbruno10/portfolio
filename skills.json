@@ -1,0 +1,11 @@
+{
+    "languages": {
+        "foo": "sample", 
+        "bar": "sample" 
+    },
+    
+    "tec": {
+        "foo": "sample", 
+        "bar": "sample" 
+    }
+}
