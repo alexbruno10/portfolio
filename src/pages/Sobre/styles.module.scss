@@ -54,29 +54,42 @@
         .contentIcons {
             
             padding: 2rem 2rem;
-            align-items: center;
-            justify-content: center;
 
             .contentTerminal {
-                max-width: 700px;
-                height: 700px;
+                padding: 0.5rem;
                 border-radius: 1rem;
+                background-color: #1d1f21;
+    
+                .contentTerminalHeader {
+    
+                    display: flex;
+                    // background-color: var(--gray-700);
+                    height: 2rem;
+                    align-items: center;
+                    
+    
+                    .contentTerminalButtons {
+                        display: flex;
+                        gap: 0.4rem;
+                        margin-left: 0.5rem;
+                        align-items: center;
+                    
+                        span {
+                            height: 1rem;
+                            width: 1rem;
+                            border-radius: 50%;
+                            background-color: var(--gray-400);
+                          }
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        color: var(--gray-400);
+                        margin: 0 auto;
+                    }
+                }
+
             }
-            
-            // .grid {
-            //     display: grid;
-            //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-            //     .item {
-
-            //         img {
-                    
-                    
-            //         }
-
-            //     }
-                
-            // }
 
         }
 

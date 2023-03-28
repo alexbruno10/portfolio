@@ -3,7 +3,7 @@ import React from '/public/icons/React.svg'
 import Skills from '../../../skills.json'
 import Highlight from 'react-highlight'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function About() {
 
@@ -31,19 +31,23 @@ export default function About() {
                         <h1>Skills</h1>
                     </div>
                     <div className={styles.contentIcons}>
-                        {/* <div className={styles.grid}>
-                            <div className={styles.item}>
-                                <img src="/public/vite.svg" alt="" />
-                            </div>
-                        </div> */}
                         <div className={styles.contentTerminal}>
-                            <pre>
+                            
+                            
                             <code>
-                            <SyntaxHighlighter language="javascript" style={dracula}>
-                            {JSON.stringify(Skills, null, 3) }
+                            <div className={styles.contentTerminalHeader}>
+                                <div className={styles.contentTerminalButtons}>
+                                    <span id='close' className={styles.close}></span>
+                                    <span className={styles.minimaze}></span>
+                                    <span className={styles.full}></span>
+                                </div>
+                                <p>alexbruno.dev</p>
+                            </div>
+                            <SyntaxHighlighter language="javascript" style={atomDark}>
+                            {JSON.stringify(Skills, null, 2) }
                             </SyntaxHighlighter>
                             </code>
-                            </pre>
+                            
                         </div>
                     </div>
                 </section>
