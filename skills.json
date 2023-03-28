@@ -1,11 +1,17 @@
 {
     "languages": {
-        "foo": "sample", 
-        "bar": "sample" 
+        "JavaScript": "React JS | Node JS | TypeScript", 
+        "PHP": "Laravel",
+        "CSS": "SASS | Styled-Components | Tailwind CSS | Chakra UI"
     },
     
-    "tec": {
-        "foo": "sample", 
-        "bar": "sample" 
+    "DB": {
+        "SQL": "MySQL | PostgreSQL | MariaDB", 
+        "NoSQL": "MongoDB | Firebase | FaunaDB | DynamoDB" 
+    },
+    "Tools": {
+        "OS": "Linux | Windows", 
+        "Git": "Github",
+        "UI/UX": "Figma"
     }
 }
