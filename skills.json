@@ -1,14 +1,16 @@
 {
-    "languages": {
-        "JavaScript": "React JS | Node JS | TypeScript", 
-        "PHP": "Laravel",
-        "CSS": "SASS | Styled-Components | Tailwind CSS | Chakra UI"
+    "Sicoob Credivar": {
+        "period": "nov 2020 - present", 
+        "position": "IT Analyst",
+        "function": "Full Stack Developer"
     },
     
-    "DB": {
-        "SQL": "MySQL | PostgreSQL | MariaDB", 
-        "NoSQL": "MongoDB | Firebase | FaunaDB | DynamoDB" 
+    "Sicoob Credivar (Internship)": {
+        "period": "mar 2019 - nov 2020", 
+        "position": "Internship",
+        "function": "Full Stack Developer"
     },
+    
     "Tools": {
         "OS": "Linux | Windows", 
         "Git": "Github",
