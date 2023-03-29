@@ -20,13 +20,13 @@ export default function Header() {
                 </Link>
                 <div className={style.sections}>
                     <Link to={`/`} onClick={() => {handleActiveLink('home')}}>
-                    <span className={activeLink == 'home' ? style.home : ''}>Home</span>
+                    <span className={activeLink == 'home' ? style.home : ''}>Início</span>
                     </Link>
                     <Link to={`/about`} onClick={() => {handleActiveLink('about')}}>
-                    <span className={activeLink == 'about' ? style.home : ''}>About</span>
+                    <span className={activeLink == 'about' ? style.home : ''}>Sobre</span>
                     </Link>
                     <Link to={`/`} onClick={() => {handleActiveLink('projects')}}>
-                    <span className={activeLink == 'projects' ? style.home : ''}>Projects</span>
+                    <span className={activeLink == 'projects' ? style.home : ''}>Projetos</span>
                     </Link>
                 </div>
                 <div className={style.icons}>
