@@ -18,8 +18,8 @@
             animation: showAbout 1s;
 
             @keyframes showAbout {
-                0%   {top:-2.5rem;}
-                100% {top:0rem;}
+                0%   {top:-2.5rem; opacity: 0;}
+                100% {top:0rem; opacity: 2;}
             }
             
         }
@@ -38,8 +38,8 @@
                     position: relative;
                     animation: show 1.5s;
                     @keyframes show {
-                        0%   {left:-10rem;}
-                        100% {left:0rem;}
+                        0%   {left:-10rem; opacity: 0;}
+                        100% {left:0rem; opacity: 1;}
                     }
                     span {
                         color: var(--white);
@@ -74,8 +74,8 @@
             animation: showSkills 1.5s;
 
             @keyframes showSkills {
-                0%   {top:-2.5rem;}
-                100% {top:0rem;}
+                0%   {top:-2.5rem; opacity: 0;}
+                100% {top:0rem; opacity: 2;}
             }
             
         }
@@ -88,6 +88,13 @@
             .contentCarrerDetails {
 
                 padding-bottom: 2rem;
+                position: relative;
+                animation: showCarrerr 1.5s;
+
+                @keyframes showCarrerr{
+                    0%   {bottom:-5.5rem; opacity: 0;}
+                    100% {bottom:0rem; opacity: 1;}
+                }
 
 
                 span {
