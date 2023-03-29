@@ -22,7 +22,7 @@ export default function About() {
                             <p>🤙🏻 Me chamo <span>Alex Bruno Neri Humberto</span>, tenho 24 anos!</p>
                             <p>🎓 Graduado em <span>Ciência da Computação</span>.</p>
                             <p>💻 <span>Desenvolvedor Full Stack</span> com experiência em HTML, CSS, SASS, Styled-Components, JavaScript, TypeScript, React JS, PHP, Laravel e Banco de Dados SQL e NoSQL.</p>
-                            <p>🚀 <span>Desenvolvedor Full Stack</span></p>
+                            <p>🚀 Sempre buscando a <span>evolução</span>!</p>
                         </div>
                         <img src="https://avatars.githubusercontent.com/u/57117620?v=4" alt="" />
                     </div>
