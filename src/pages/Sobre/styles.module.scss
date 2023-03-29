@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 10vh 10rem;
+    padding-top: 10vh;
     height: 80vh;
     color: var(--gray-200);
 
@@ -12,8 +12,15 @@
 
         .contentTitle {
         
-            width: 100%;
+            display: flex;
+            position: relative;
             color: var(--red-100);
+            animation: showAbout 1s;
+
+            @keyframes showAbout {
+                0%   {top:-2.5rem;}
+                100% {top:0rem;}
+            }
             
         }
     
@@ -27,6 +34,13 @@
     
             .contentParagraph {
                 p {
+
+                    position: relative;
+                    animation: show 1.5s;
+                    @keyframes show {
+                        0%   {left:-10rem;}
+                        100% {left:0rem;}
+                    }
                     span {
                         color: var(--white);
                     }
@@ -36,57 +50,48 @@
             img {
                 width: 20%;
                 height: 20%;
+                position: relative;
                 border-radius: 50%;
+                animation: showImg 1s;
+
+                @keyframes showImg {
+                    0%   {right:-10rem; opacity: 0;}
+                    100% {right:0rem; opacity: 1;}
+                }
             };
             
         }
     }
 
-    .contentSkills {
+    .carrer {
 
 
-        .contentTitle {
-            width: 100%;
+        .carrerTitle {
+        
+            display: flex;
+            position: relative;
             color: var(--red-100);
-            // border-bottom: 2px solid var(--red-100);
+            animation: showSkills 1.5s;
+
+            @keyframes showSkills {
+                0%   {top:-2.5rem;}
+                100% {top:0rem;}
+            }
+            
         }
 
-        .contentIcons {
+        .contentCarrer {
             
             padding: 2rem 2rem;
 
-            .contentTerminal {
-                padding: 0.5rem;
-                border-radius: 1rem;
-                background-color: #1d1f21;
-    
-                .contentTerminalHeader {
-    
-                    display: flex;
-                    // background-color: var(--gray-700);
-                    height: 2rem;
-                    align-items: center;
-                    
-    
-                    .contentTerminalButtons {
-                        display: flex;
-                        gap: 0.4rem;
-                        margin-left: 0.5rem;
-                        align-items: center;
-                    
-                        span {
-                            height: 1rem;
-                            width: 1rem;
-                            border-radius: 50%;
-                            background-color: var(--gray-400);
-                          }
-                    }
-    
-                    p {
-                        font-size: 1rem;
-                        color: var(--gray-400);
-                        margin: 0 auto;
-                    }
+
+            .contentCarrerDetails {
+
+                padding-bottom: 2rem;
+
+
+                span {
+                    color: var(--white);
                 }
 
             }
