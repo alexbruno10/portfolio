@@ -4,6 +4,8 @@ import Skills from '../../../skills.json'
 import Highlight from 'react-highlight'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export default function About() {
 
@@ -31,44 +33,53 @@ export default function About() {
                     <div className={styles.carrerTitle}>
                         <h1>Carreira</h1>
                     </div>
-                    <div className={styles.contentCarrer}>
-                        <div className={styles.contentCarrerDetails}>
-                            <span><strong>Desenvolvedor Full Stack</strong></span>
-                            <p>Sicoob Credivar - Analista de T.I </p>
-                            <p>Novembro 2020 - Presente</p>
-                        </div>
-                        <div className={styles.contentCarrerDetails}>
-                            <span>Estágio</span>
-                            <p>Sicoob Credivar</p>
-                            <p>Março 2019 - Novembro 2020</p>
-                        </div>
-                        <div className={styles.contentCarrerDetails}>
-                            <span>Auxiliar Administrativo</span>
-                            <p>Pedras Decorativas Líder</p>
-                            <p>Agosto 2017 - Fevereiro 2019</p>
-                        </div>
-                    </div>
-                    
+                    <VerticalTimeline>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'var(--gray-700)', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid  var(--gray-700)' }}
+                            date="Novembro 2020 - Presente"
+                            iconStyle={{ background: 'var(--red-100)', color: '#fff' }}
 
-                    {/* Terminal com skills */}
-                    {/* <div className={styles.contentIcons}>
-                        <div className={styles.contentTerminal}>
-                            <code>
-                            <div className={styles.contentTerminalHeader}>
-                                <div className={styles.contentTerminalButtons}>
-                                    <span id='close' className={styles.close}></span>
-                                    <span className={styles.minimaze}></span>
-                                    <span className={styles.full}></span>
-                                </div>
-                                <p>alexbruno.dev</p>
-                            </div>
-                            <SyntaxHighlighter language="javascript" style={atomDark}>
-                            {JSON.stringify(Skills, null, 1) }
-                            </SyntaxHighlighter>
-                            </code>
-                            
-                        </div>
-                    </div> */}
+                        >
+                            <h3 className="vertical-timeline-element-title">Desenvolvedor Full Stack</h3>
+                            <h4 className="vertical-timeline-element-subtitle">Sicoob Credivar</h4>
+                            <p>
+                            Desenvolvimento de sistemas com foco no resultado, associado e segurança. 
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'var(--gray-700)', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid  var(--gray-700)' }}
+                            date="Março 2019 - Novembro 2020"
+                            iconStyle={{ background: 'var(--red-100)', color: '#fff' }}
+
+                        >
+                            <h3 className="vertical-timeline-element-title">Estágio</h3>
+                            <h4 className="vertical-timeline-element-subtitle">Sicoob Credivar</h4>
+                            <p>
+                            Suporte de TI e redes.
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'var(--gray-700)', color: '#fff' }}
+                            contentArrowStyle={{ borderRight: '7px solid  var(--gray-700)' }}
+                            date="Agosto 2017 - Fevereiro 2019"
+                            iconStyle={{ background: 'var(--red-100)', color: '#fff' }}
+
+                        >
+                            <h3 className="vertical-timeline-element-title">Auxíliar Administrativo</h3>
+                            <h4 className="vertical-timeline-element-subtitle">Pedras Decorativas Líder</h4>
+                            <p>
+                            Vendas, notas fiscais e controle de pedidos.
+                            </p>
+                        </VerticalTimelineElement>
+
+                        
+                        </VerticalTimeline>
+
                 </section>
             </section>
         </>
