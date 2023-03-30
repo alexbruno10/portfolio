@@ -9,11 +9,7 @@ export default function Home() {
                 <span>Olá, bem-vindo ao meu site!</span>
                 <h1>Eu sou <span className={styles.name}>Alex Bruno Neri Humberto</span></h1>
                 <h2>Desenvolvedor Full Stack</h2>
-                <NavLink to={`/`} style={({ isActive, isPending }) => {
-                    return {
-                    color: isPending ? "red" : "green",
-                    };
-                }}>
+                <NavLink to={`/about`} className={({ isActive }) => (isActive ? styles.active : '')}>
                     <span className={styles.aboutMe}>Sobre mim <ChevronsRight /></span>
                 </NavLink>
             </div>

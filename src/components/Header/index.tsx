@@ -1,16 +1,9 @@
 import {Github, Linkedin, Mail } from 'lucide-react'
 import style from './styles.module.scss'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Header() {
 
-    const [activeLink, setActiveLink] = useState('home');
-
-    function handleActiveLink (name: string) {
-        console.log(name)
-        setActiveLink(name);
-    }
 
     return(
         <>
@@ -19,15 +12,15 @@ export default function Header() {
                     <h1>AB</h1>
                 </Link>
                 <div className={style.sections}>
-                    <Link to={`/`} onClick={() => {handleActiveLink('home')}}>
-                    <span className={activeLink == 'home' ? style.home : ''}>Início</span>
-                    </Link>
-                    <Link to={`/about`} onClick={() => {handleActiveLink('about')}}>
-                    <span className={activeLink == 'about' ? style.home : ''}>Sobre</span>
-                    </Link>
-                    <Link to={`/`} onClick={() => {handleActiveLink('projects')}}>
-                    <span className={activeLink == 'projects' ? style.home : ''}>Projetos</span>
-                    </Link>
+                    <NavLink to={`/`} className={({ isActive }) => (isActive ? style.home : '')}>
+                        Início
+                    </NavLink>
+                    <NavLink to={`/about`} className={({ isActive }) => (isActive ? style.about : '')}>
+                        Sobre
+                    </NavLink>
+                    <NavLink to={`/projects`} className={({ isActive }) => (isActive ? style.projects : '')}>
+                        Projetos
+                    </NavLink>
                 </div>
                 <div className={style.icons}>
                     <Link to={`https://github.com/alexbruno10`} target="_blank">
