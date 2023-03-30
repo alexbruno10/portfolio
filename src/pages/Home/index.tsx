@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import { ChevronsRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Home() {
     return(
@@ -9,9 +9,13 @@ export default function Home() {
                 <span>Olá, bem-vindo ao meu site!</span>
                 <h1>Eu sou <span className={styles.name}>Alex Bruno Neri Humberto</span></h1>
                 <h2>Desenvolvedor Full Stack</h2>
-                <Link to={`/about`}>
+                <NavLink to={`/`} style={({ isActive, isPending }) => {
+                    return {
+                    color: isPending ? "red" : "green",
+                    };
+                }}>
                     <span className={styles.aboutMe}>Sobre mim <ChevronsRight /></span>
-                </Link>
+                </NavLink>
             </div>
         </div>
     )
