@@ -51,13 +51,19 @@
   }
 
   @media (max-width: 630px) {
-    ._contentAbout_1k4zz_26 {
+    ._contentAbout_j5l0z_26 {
       flex-direction: column;
       gap: 3rem;
     }
 
-    ._contentAbout_1k4zz_26 img {
+    ._contentAbout_j5l0z_26 img {
       order: -1;
+    }
+
+    ._icons_1igbo_103 
+    {
+      padding: 0;
+      grid-template-columns: repeat(3, 1fr);
     }
 
   }

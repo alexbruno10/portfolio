@@ -84,6 +84,35 @@
 
 
     }
+
+    .skills {
+        padding-bottom: 3rem;
+
+
+        .skillsTitle {
+        
+            display: flex;
+            position: relative;
+            color: var(--red-100);
+            animation: showSkills 1.5s;
+            padding-bottom: 3rem;
+
+            @keyframes showSkills {
+                0%   {top:-2.5rem; opacity: 0;}
+                100% {top:0rem; opacity: 2;}
+            }
+            
+        }
+
+        .icons {
+            // padding: 2rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+
+    }
     
     
 

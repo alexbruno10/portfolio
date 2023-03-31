@@ -6,6 +6,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import style from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark';
 
 export default function About() {
 
@@ -27,6 +28,27 @@ export default function About() {
                             <p>🚀 Sempre buscando a <span>evolução</span>!</p>
                         </div>
                         <img src="https://avatars.githubusercontent.com/u/57117620?v=4" alt="" />
+                    </div>
+                </section>
+                <section className={styles.skills}>
+                    <div className={styles.skillsTitle}>
+                        <h1>Tecnologias e habilidades</h1>
+                    </div>
+                    <div className={styles.icons}>
+                        <img src="/public/icons/React.svg" alt="" />
+                        <img src="/public/icons/Javascript.svg" alt="" />
+                        <img src="/public/icons/TypeScript.svg" alt="" />
+                        <img src="/public/icons/Nextjs.svg" alt="" />
+                        <img src="/public/icons/SASS.svg" alt="" />
+                        <img src="/public/icons/Styled-component.svg" alt="" />
+                        <img src="/public/icons/Nodejs.svg" alt="" />
+                        <img src="/public/icons/PHP.svg" alt="" />
+                        <img src="/public/icons/Laravel.svg" alt="" />
+                        <img src="/public/icons/Figma.svg" alt="" />
+                        <img src="/public/icons/Git.svg" alt="" />
+                        <img src="/public/icons/Mysql.svg" alt="" />
+                        <img src="/public/icons/Postgresql.svg" alt="" />
+                        <img src="/public/icons/Mongo.svg" alt="" />
                     </div>
                 </section>
                 <section className={styles.carrer}>
@@ -81,6 +103,7 @@ export default function About() {
                         </VerticalTimeline>
 
                 </section>
+
             </section>
         </>
     )
