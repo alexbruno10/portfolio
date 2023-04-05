@@ -66,7 +66,6 @@
     .carrer {
 
 
-
         .carrerTitle {
         
             display: flex;
@@ -87,6 +86,7 @@
 
     .skills {
         padding-bottom: 3rem;
+        padding-top: 3rem;
 
 
         .skillsTitle {
@@ -95,7 +95,7 @@
             position: relative;
             color: var(--red-100);
             animation: showSkills 1.5s;
-            padding-bottom: 3rem;
+            // padding-bottom: 3rem;
 
             @keyframes showSkills {
                 0%   {top:-2.5rem; opacity: 0;}
@@ -105,11 +105,20 @@
         }
 
         .icons {
-            // padding: 2rem 2rem;
+            padding: 2rem 2rem;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
+            position: relative;
+            animation: showIcons 3.5s;
+
+
+            @keyframes showIcons {
+                0%   {opacity: 0;}
+                100% {opacity: 2;}
+            }
         }
+
+
 
 
     }

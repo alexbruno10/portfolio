@@ -50,19 +50,31 @@
     }
   }
 
+  @media (min-width: 631px) {
+
+
+    ._icons_1jmx1_103 
+    {
+      // padding: 0;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+  }
+
   @media (max-width: 630px) {
-    ._contentAbout_j5l0z_26 {
+
+    ._contentAbout_1jmx1_26 {
       flex-direction: column;
       gap: 3rem;
     }
 
-    ._contentAbout_j5l0z_26 img {
+    ._contentAbout_1jmx1_26 img {
       order: -1;
     }
 
-    ._icons_1igbo_103 
+    ._icons_1jmx1_103 
     {
-      padding: 0;
+      // padding: 0;
       grid-template-columns: repeat(3, 1fr);
     }
 

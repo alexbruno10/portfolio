@@ -35,20 +35,18 @@ export default function About() {
                         <h1>Tecnologias e habilidades</h1>
                     </div>
                     <div className={styles.icons}>
-                        <img src="/public/icons/React.svg" alt="" />
-                        <img src="/public/icons/Javascript.svg" alt="" />
-                        <img src="/public/icons/TypeScript.svg" alt="" />
-                        <img src="/public/icons/Nextjs.svg" alt="" />
-                        <img src="/public/icons/SASS.svg" alt="" />
-                        <img src="/public/icons/Styled-component.svg" alt="" />
-                        <img src="/public/icons/Nodejs.svg" alt="" />
-                        <img src="/public/icons/PHP.svg" alt="" />
-                        <img src="/public/icons/Laravel.svg" alt="" />
-                        <img src="/public/icons/Figma.svg" alt="" />
-                        <img src="/public/icons/Git.svg" alt="" />
-                        <img src="/public/icons/Mysql.svg" alt="" />
-                        <img src="/public/icons/Postgresql.svg" alt="" />
-                        <img src="/public/icons/Mongo.svg" alt="" />
+                        <img src="/icons/React.svg" alt="" />
+                        <img src="/icons/Javascript.svg" alt="" />
+                        <img src="/icons/TypeScript.svg" alt="" />
+                        <img src="/icons/Nextjs.svg" alt="" />
+                        <img src="/icons/SASS.svg" alt="" />
+                        <img src="/icons/Styled-component.svg" alt="" />
+                        <img src="/icons/Nodejs.svg" alt="" />
+                        <img src="/icons/PHP.svg" alt="" />
+                        <img src="/icons/Laravel.svg" alt="" />
+                        <img src="/icons/Git.svg" alt="" />
+                        <img src="/icons/Postgresql.svg" alt="" />
+                        <img src="/icons/Mongo.svg" alt="" />
                     </div>
                 </section>
                 <section className={styles.carrer}>
